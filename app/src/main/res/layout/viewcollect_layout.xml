@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/view_collect_title"
+        android:layout_width="fill_parent"
+        android:background="@drawable/title_bg"
+        android:layout_height="50dp">
+
+
+        <ImageView
+            android:id="@+id/collect_back_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_icon"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:text="美景收藏"/>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/viewcollect_listview"
+        android:listSelector="@android:color/transparent"
+
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_of_personalinfo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/personal_title_layout"
+        android:layout_width="fill_parent"
+        android:background="@drawable/title_bg"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/back_bt"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/log_in_btbg"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="返回"
+            android:textSize="18dp"
+
+            android:textColor="#ffffff"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:text="个人信息"/>
+
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+
+        android:id="@+id/name_avatar_layout"
+        android:background="@drawable/personalinfo_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_title_layout">
+
+        <ImageView
+            android:id="@+id/avator_view"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/nickname_textview"
+            android:layout_below="@id/avator_view"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginTop="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/fond_view"
+        android:layout_below="@id/name_avatar_layout"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="50dp"
+        android:text="喜欢的美景 "
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg1"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/fond_plant"
+        android:layout_below="@id/fond_view"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="喜欢的植物 "
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/my_news"
+        android:layout_below="@id/fond_plant"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:text="接收的消息 "
+        android:textSize="20dp"
+        android:paddingLeft="15dp"
+        android:background="@drawable/bg3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/logout_bt"
+        android:layout_below="@id/my_news"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="#FFFF6E30"
+        android:text="退出当前账号"
+        android:textSize="20dp"/>
+
+</RelativeLayout>
